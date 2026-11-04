@@ -1,0 +1,71 @@
+/* Light theme modelled on the EuroSys 2027 site (Start Bootstrap "Agency") */
+:root{--accent:#b33;--accent-hover:#d44;--nav:#222;--line:#e3e3e3;--alt:#f8f9fa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:#fff;color:#212529;overflow-x:hidden;font:16px/1.75 'Raleway','Helvetica Neue',Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+a:hover{color:var(--accent-hover)}
+.container{max-width:1000px;margin:0 auto;padding:0 15px}
+h1,h2,h3{font-weight:700;line-height:1.3}
+#mainNav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--nav)}
+#mainNav .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.brand{color:#f44;font-weight:700;font-size:1.25em;text-decoration:none;letter-spacing:1px}
+#menu{list-style:none;display:flex;margin:0;padding:0}
+#menu a{display:block;padding:.9em 1em;color:#fff;text-decoration:none;text-transform:uppercase;font-size:90%;letter-spacing:1px}
+#menu a:hover{color:#f44}
+.menu-toggle{display:none;border:0;background:#c44;color:#fff;font:inherit;font-size:12px;text-transform:uppercase;padding:13px;cursor:pointer}
+.masthead{text-align:center;color:#fff;background:linear-gradient(135deg,#2b2b2b,#5a2a2a 70%,#8a3030)}
+.intro-text{padding:140px 0 90px}
+.intro-heading{font-size:36px;font-weight:700;margin-bottom:25px}
+.intro-lead-in{font-size:20px;line-height:1.4;margin-bottom:18px}
+.plain{color:#fff}
+.btn{display:inline-block;margin-top:10px;padding:10px 26px;background:var(--accent);color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:700}
+.btn:hover{background:var(--accent-hover);color:#fff}
+section{padding:65px 0}
+section.alt{background:var(--alt)}
+.section-heading{font-size:30px;margin:0 0 15px}
+.section-subheading{font-size:20px;font-weight:700;margin:30px 0 12px}
+p{margin:0 0 1em}
+.note{font-size:90%;color:#6c757d}
+.table{width:100%;border-collapse:collapse;margin:10px 0}
+.table th,.table td{text-align:left;padding:.65rem .75rem;border-top:1px solid var(--line);vertical-align:top}
+.table thead th{border-top:0;border-bottom:2px solid var(--line)}
+.dates th,#dates .table th{width:45%}
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+.cols.three{grid-template-columns:repeat(3,1fr)}
+footer{padding:30px 0;font-size:90%;border-top:1px solid var(--line);background:var(--alt)}
+footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (min-width:768px){.intro-heading{font-size:60px}.intro-lead-in{font-size:26px}.intro-text{padding:200px 0 160px}}
+@media (max-width:900px){
+  .menu-toggle{display:block}
+  #menu{display:none;flex-direction:column;width:100%}
+  #menu.open{display:flex}
+  .cols,.cols.three{grid-template-columns:1fr}
+}
+
+/* Layout refinements */
+body{font-size:17px}
+.container{max-width:1080px}
+section ul{padding-left:1.3rem}
+section li{margin-bottom:.35rem}
+.section-heading{position:relative;display:inline-block;padding-bottom:14px;margin-bottom:24px}
+.section-heading::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;background:var(--accent)}
+.schedule td:first-child{white-space:nowrap;width:9.5em;font-variant-numeric:tabular-nums;color:#555}
+.schedule tr.key td{font-weight:700;background:#fbeeee}
+.schedule tr.break td{color:#6c757d;font-style:italic}
+.cards>div{background:#fff;border:1px solid var(--line);border-top:3px solid var(--accent);padding:6px 22px 14px;margin-bottom:20px}
+.cards .section-subheading{margin-top:14px}
+.cards p{margin-bottom:0}
+.pc{columns:2;column-gap:40px;list-style:none;padding-left:0}
+.pc li{break-inside:avoid}
+.masthead .intro-lead-in:first-of-type{font-size:22px;margin-left:auto;margin-right:auto}
+@media (max-width:900px){.pc{columns:1}.schedule td:first-child{width:7.5em}section{padding:45px 0}}
+.eurosys-logo{display:inline-block;margin-bottom:22px}
+.eurosys-logo img{display:block;height:auto;width:min(300px,70vw)}
+.cards .affil{color:#555;font-weight:600;font-size:95%;line-height:1.45;margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.cards .bio{margin:0;font-size:95%}
+.cols.three{gap:0 28px}
+.cards .section-subheading a{text-decoration:none}
+.cards .section-subheading a:hover{text-decoration:underline}
+.pc li{margin-bottom:.8rem;line-height:1.5}
+.pc .inst{color:#555;font-size:95%}

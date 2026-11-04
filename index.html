@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STRIDE 2027 - Workshop at EuroSys 2027</title>
+  <meta name="description" content="STRIDE 2027: STability and Reliability in AI Infrastructure Deployment at ScalE. Workshop co-located with EuroSys 2027, Rabat, Morocco, April 19, 2027.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="STRIDE 2027 - Workshop at EuroSys 2027">
+  <meta property="og:description" content="STability and Reliability in AI Infrastructure Deployment at ScalE. Rabat, Morocco, April 19, 2027.">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-top">
+
+  <nav id="mainNav">
+    <div class="container">
+      <a class="brand" href="#page-top">STRIDE 2027</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="#cfp">Call for Papers</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#keynotes">Keynotes</a></li>
+        <li><a href="#committee">Committee</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-heading">STRIDE 2027</div>
+        <div class="intro-lead-in">STability and Reliability in AI Infrastructure Deployment at ScalE</div>
+        <div class="intro-lead-in">Workshop at</div>
+        <a class="eurosys-logo" href="https://2027.eurosys.org/"><img src="img/logoeuro27-dark.png" alt="EuroSys 2027" width="1620" height="154"></a>
+        <div class="intro-lead-in"><strong>Rabat, Morocco</strong> - April 19, 2027</div>
+        <p><a class="btn" href="#cfp">Call for Papers</a></p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-heading">About the Workshop</h2>
+      <p>The STRIDE workshop, co-located with <a href="https://2027.eurosys.org/">EuroSys 2027</a>, brings together researchers working on the design and operation of stable, reliable, and fault-tolerant AI infrastructures to discuss the next steps of AI infrastructure evolution.</p>
+      <p>Large-scale AI infrastructures are an integral part of modern data centers and advance AI and its applications. Elastic fault tolerance mechanisms that dynamically adapt to workload changes and unexpected faults during training and inference are critical to maintaining continuous operation and minimizing performance degradation. New approaches at both software (model) and hardware levels are needed to break down the barriers between isolated software and hardware reliability mechanisms. Moreover, resilient AI agent infrastructures and rapid recovery technologies must handle massive dependencies between agents to prevent large-scale fault propagation. Finally, intensive interaction between heterogeneous CPUs and xPUs leads to high I/O load and complex communication patterns that pose new challenges to reliability.</p>
+      <p>STRIDE aims to attract contributions from academia and industry on system development, fault tolerance, reliability, stability, and AI method design. Infrastructure researchers from the big labs operating large AI infrastructures are explicitly invited to share insights into current infrastructure challenges.</p>
+      <h3 class="section-subheading">History</h3>
+      <p>STRIDE builds on the AIOps workshop series (AI-enabled Operations, 2021-2023, co-located with ICDM and ICSOC), which drew 20+ submissions per edition. Reliable large-model deployment draws on storage systems, high-performance networking, parallelism, testing and verification, runtime and operating systems, and data centres. These are core EuroSys topics, so the workshop is now refocused on reliable and stable AI infrastructures and attached to a premier systems conference.</p>
+    </div>
+  </section>
+
+  <section id="dates" class="alt">
+    <div class="container">
+      <h2 class="section-heading">Important Dates</h2>
+      <table class="table">
+        <tr><th>Call for Papers published</th><td>November 15, 2026</td></tr>
+        <tr><th>Paper submission deadline</th><td>February 1, 2027</td></tr>
+        <tr><th>Acceptance notification</th><td>March 1, 2027</td></tr>
+        <tr><th>Camera-ready version due</th><td>March 16, 2027</td></tr>
+        <tr><th>Workshop (full day)</th><td><strong>April 19, 2027</strong>, Rabat, Morocco</td></tr>
+      </table>
+      <p class="note">All deadlines are anywhere on Earth (AoE).</p>
+    </div>
+  </section>
+
+  <section id="cfp">
+    <div class="container">
+      <h2 class="section-heading">Call for Papers</h2>
+      <p class="note">The official Call for Papers will be published on November 15, 2026.</p>
+      <p>We invite contributions on highly reliable AI infrastructures for training and inference, with a focus on precision and stability, and on full-stack reliability of the software and hardware underpinning them. Production experience reports are particularly encouraged.</p>
+      <h3 class="section-subheading">Topics of interest</h3>
+      <ul>
+        <li>AI training and inference stability challenges (loss oscillations, convergence problems, norm spikes)</li>
+        <li>Root cause analysis, explainability, and mitigation approaches for instability</li>
+        <li>Numerical training robustness (error accumulation, convergence stability)</li>
+        <li>Detection, localization, and mitigation of silent data corruption, and the interplay of numerical errors and hardware faults</li>
+        <li>Cost-effective checkpointing, localized recovery, and elastic reconfiguration</li>
+        <li>Inference and agent service continuity under failures, including latency and availability guarantees and recovery of KV caches, agent state, and sandbox environments</li>
+        <li>Production experience reports and evaluation methods linking infrastructure faults to training convergence, model quality, and SLOs</li>
+        <li>Software/hardware co-designed reliability</li>
+        <li>Reliability of large-scale distributed agent infrastructures: observability, fault localization, root cause analysis, self-healing, and reliable memory for long-horizon tasks</li>
+      </ul>
+      <h3 class="section-subheading">Submission guidelines</h3>
+      <ul>
+        <li>Papers of up to <strong>6 pages</strong> in double-column ACM format, excluding bibliography, using the latest <a href="https://www.acm.org/publications/proceedings-template">ACM sigconf template</a>.</li>
+        <li>Submissions must be <strong>anonymized</strong>.</li>
+        <li>Each submission is reviewed by three program committee members.</li>
+        <li>The five best-ranked papers are selected for presentation (20 min talk + 10 min Q&amp;A).</li>
+        <li>At least one author of each accepted paper must attend and present. Accepted and presented papers are published in the ACM Digital Library.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="program" class="alt">
+    <div class="container">
+      <h2 class="section-heading">Program</h2>
+      <p>Full-day event on Monday, April 19, 2027: two keynotes, five research talks, impulse talks, and a panel discussion with five experts from academia and industry (panelists to be announced).</p>
+      <table class="table schedule">
+        <thead><tr><th>Time</th><th>Activity</th></tr></thead>
+        <tr><td>08:30-09:00</td><td>Opening and Introduction</td></tr>
+        <tr class="key"><td>09:00-10:00</td><td>Keynote 1, Q&amp;A</td></tr>
+        <tr class="break"><td>10:00-10:30</td><td>Coffee Break</td></tr>
+        <tr><td>10:30-12:00</td><td>Research talks 1-3</td></tr>
+        <tr class="break"><td>12:00-13:00</td><td>Lunch</td></tr>
+        <tr class="key"><td>13:00-14:00</td><td>Keynote 2, Q&amp;A</td></tr>
+        <tr><td>14:00-15:00</td><td>Research talks 4-5</td></tr>
+        <tr class="break"><td>15:00-15:30</td><td>Coffee Break</td></tr>
+        <tr class="key"><td>15:30-17:00</td><td>Impulse Talks and Panel Discussion</td></tr>
+        <tr><td>17:00</td><td>Closing</td></tr>
+      </table>
+      <p class="note">Schedule is preliminary.</p>
+    </div>
+  </section>
+
+  <section id="keynotes">
+    <div class="container">
+      <h2 class="section-heading">Keynote Speakers</h2>
+      <div class="cols cards">
+        <div>
+          <h3 class="section-subheading"><a href="https://cscw.fudan.edu.cn/57/bf/c31071a415679/page.htm">Prof. Li Shang</a></h3>
+          <p>Fudan University<br><em>Fault Detection in Large-Scale AI Systems</em></p>
+        </div>
+        <div>
+          <h3 class="section-subheading"><a href="https://mboehm7.github.io/">Prof. Matthias Böhm</a></h3>
+          <p>TU Berlin<br><em>Elastic Training / Inference of ML Systems</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="committee" class="alt">
+    <div class="container">
+      <h2 class="section-heading">Program Committee</h2>
+      <p>To be announced.</p>
+    </div>
+  </section>
+
+  <section id="organizers">
+    <div class="container">
+      <h2 class="section-heading">Organizers</h2>
+      <div class="cols three cards">
+        <div>
+          <h3 class="section-subheading"><a href="https://www.tu.berlin/en/dos/team/professor">Prof. Odej Kao</a></h3>
+          <p class="affil">TU Berlin, Germany</p>
+          <p class="bio">Professor of distributed and operating systems; research on LLMOps/AIOps, fault tolerance and reliability of large infrastructures, and cloud computing.</p>
+        </div>
+        <div>
+          <h3 class="section-subheading"><a href="https://cscw.fudan.edu.cn/57/bf/c31071a415679/page.htm">Prof. Li Shang</a></h3>
+          <p class="affil">Fudan University, China</p>
+          <p class="bio">Professor at the College of Computer Science and AI; research on machine learning systems, embodied intelligence, VLSI and EDA.</p>
+        </div>
+        <div>
+          <h3 class="section-subheading"><a href="https://math-ml.univie.ac.at">Prof. Philipp Petersen</a></h3>
+          <p class="affil">University of Vienna, Austria</p>
+          <p class="bio">Associate Professor of Mathematics of Machine Learning; research on the foundations of deep learning.</p>
+        </div>
+      </div>
+      <p><strong>Contact:</strong> Prof. Odej Kao, <a href="mailto:odej.kao@tu-berlin.de">odej.kao@tu-berlin.de</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>Copyright &copy; STRIDE 2027</span>
+      <span class="links"><a href="https://2027.eurosys.org/">EuroSys 2027</a> - <a href="#cfp">Call for Papers</a> - <a href="https://stride.hotcrp.com">Submission</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
